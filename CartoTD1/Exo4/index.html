@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test des Touch Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        canvas {
+            border: 1px solid black;
+            margin-top: 20px;
+            touch-action: none; 
+        }
+
+        #info {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tester les Touch Events</h1>
+    <p>Appuyez ou dessinez sur le canvas ci-dessous.</p>
+    
+    <canvas id="drawingCanvas" width="400" height="400"></canvas>
+    
+    <div id="info">
+        <p>Position : <span id="position"></span></p>
+        <p>Type d'event : <span id="eventType"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

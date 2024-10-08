@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capteurs d'Orientation et de Mouvement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Orientation et Mouvement du Smartphone</h1>
+    <button id="requestPermissionBtn">Autoriser l'accès aux capteurs</button>
+
+    <h2>Orientation (alpha, beta, gamma)</h2>
+    <ul>
+        <li>Alpha : <span id="alpha">0</span></li>
+        <li>Beta : <span id="beta">0</span></li>
+        <li>Gamma : <span id="gamma">0</span></li>
+    </ul>
+
+    <h2>Mouvement (accélération en translation et rotation)</h2>
+    <ul>
+        <li>Accélération X : <span id="accelerationX">0</span></li>
+        <li>Accélération Y : <span id="accelerationY">0</span></li>
+        <li>Accélération Z : <span id="accelerationZ">0</span></li>
+        <li>Rotation Alpha : <span id="rotationAlpha">0</span></li>
+        <li>Rotation Beta : <span id="rotationBeta">0</span></li>
+        <li>Rotation Gamma : <span id="rotationGamma">0</span></li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
